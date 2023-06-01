@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title> 
+        <%= typeof title != 'undefined' ? title : 'Website Name' %>
+    </title>
+    <meta content="<%= typeof description != 'undefined' ? description : 'Website Description' %>" name="description" />
+    <meta content="<%= typeof keywords != 'undefined' ? keywords : 'website keywords' %>" name="keywords" />
+    <meta content="follow" name="robots" />
+    <meta content="#ffffff" name="theme-color" />
+    <meta content="#ffffff" name="msapplication-TileColor" />
+    <meta
+      content="/assets/favicons/browserconfig.xml"
+      name="msapplication-config"
+    />
+    <link rel="alternate" href="https://example.com" hrefLang="en-us" />
+    <link rel="canonical" href="<%= typeof slug != 'undefined' ? `https://example.com/${slug}` : 'https://example.com' %>" />
+    <link
+      href="/assets/favicons/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="/assets/favicons/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="/assets/favicons/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link href="/assets/favicons/site.webmanifest" rel="manifest" />
+    <link
+      color="#5bbad5"
+      href="/assets/favicons/safari-pinned-tab.svg"
+      rel="mask-icon"
+    />
+    <link href="/favicons/favicon.ico" rel="shortcut icon" />
+
+    <meta content="en_US" property="og:locale" />
+    <meta content="<%= typeof title != 'undefined' ? title : 'Website Name' %>" property="og:title" />
+    <meta content="<%= typeof description != 'undefined' ? description : 'Website Description' %>" property="og:description" />
+    <meta itemprop="image" content="<%= typeof image != 'undefined' ? image : 'https://example.com/assets/images/cover.png' %>">
+    <meta property="og:image" content="<%= typeof image != 'undefined' ? image : 'https://example.com/assets/images/cover.png' %>">
+    <meta name="twitter:image" content="<%= typeof image != 'undefined' ? image : 'https://example.com/assets/images/cover.png' %>">
+
+    <meta content="" name="yandex-verification" />
+    <meta
+      content=""
+      name="google-site-verification"
+    />
+</head>
